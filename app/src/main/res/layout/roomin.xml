@@ -6,6 +6,150 @@ android:paddingRight="@dimen/activity_horizontal_margin"
 android:paddingTop="@dimen/activity_vertical_margin"
 android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
 
-    >
+    android:background="@mipmap/asd">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="테스트용 방"
+            android:id="@+id/textView3"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+        <RelativeLayout
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            android:background="#70000000"
+            android:id="@+id/relativeLayout"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="부탁합니다"
+                android:id="@+id/textView4"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="name"
+                android:id="@+id/roomin_name"
+                android:textColor="#ffffffff"
+                android:layout_alignTop="@+id/textView8"
+                android:layout_alignLeft="@+id/roomin_phone"
+                android:layout_alignStart="@+id/roomin_phone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="phone"
+                android:id="@+id/roomin_phone"
+                android:textColor="#ffffffff"
+                android:layout_alignTop="@+id/textView7"
+                android:layout_toRightOf="@+id/textView7"
+                android:layout_toEndOf="@+id/textView7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="제한시간 : 30분"
+                android:id="@+id/textView6"
+                android:textColor="#ffffff"
+                android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/textView10"
+                android:layout_alignStart="@+id/textView10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="이 름     :"
+                android:id="@+id/textView8"
+                android:textColor="#ffffff"
+                android:layout_above="@+id/textView7"
+                android:layout_alignRight="@+id/imageView"
+                android:layout_alignEnd="@+id/imageView"
+                android:layout_marginRight="72dp"
+                android:layout_marginEnd="72dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:background="@mipmap/map"
+                android:layout_below="@+id/textView4"
+                android:layout_alignLeft="@+id/textView4"
+                android:layout_alignStart="@+id/textView4"
+                android:layout_above="@+id/roomin_name"
+                android:layout_alignRight="@+id/textView4"
+                android:layout_alignEnd="@+id/textView4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="연락처  :"
+                android:id="@+id/textView7"
+                android:textColor="#ffffff"
+                android:layout_above="@+id/textView9"
+                android:layout_alignLeft="@+id/textView8"
+                android:layout_alignStart="@+id/textView8" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="요 금    :3,000 원"
+                android:id="@+id/textView9"
+                android:textColor="#ffffff"
+                android:layout_above="@+id/textView10"
+                android:layout_alignLeft="@+id/textView7"
+                android:layout_alignStart="@+id/textView7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="조건     : 화장품 사와주기"
+                android:id="@+id/textView10"
+                android:textColor="#ffffff"
+                android:layout_above="@+id/textView6"
+                android:layout_alignLeft="@+id/textView9"
+                android:layout_alignStart="@+id/textView9" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="제가할게요!"
+            android:id="@+id/textView5"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_centerHorizontal="true"
+            android:background="#d4ff00" />
+
+    </RelativeLayout>
 </RelativeLayout>
